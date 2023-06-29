@@ -1,38 +1,38 @@
 const questions = [
   {
-    question: "Mi a gyerekek és HÉPU kedvenc étele?",
+    question: "Mi Tatita néninek a kedvenc színe?",
     answers: [
-      { text: "Cápaleves", correct: false },
-      { text: "Smart leves", correct: true },
-      { text: "Bableves", correct: false },
-      { text: "Káposztaleves", correct: false },
+      { text: "Türkiz", correct: false },
+      { text: "Rózsaszín", correct: true },
+      { text: "Piros", correct: false },
+      { text: "Lila", correct: false },
     ],
   },
   {
-    question: "Mi Katika kedvenc boltja?",
+    question: "Mit szeret Muttymurutty csinálni?",
     answers: [
-      { text: "Crystal Nails", correct: true },
-      { text: "Rossmann", correct: false },
-      { text: "Auchan", correct: false },
-      { text: "Tesco", correct: false },
+      { text: "PS-ezni", correct: true },
+      { text: "Vásárolni", correct: false },
+      { text: "Tanulni", correct: false },
+      { text: "Olvasni", correct: false },
     ],
   },
   {
-    question: "Petike holnap összetudja rakni a számítógépet?",
+    question: "Ki szokott fürödni a legtöbb vízben?",
     answers: [
-      { text: "Nem", correct: false },
+      { text: "Anya", correct: false },
+      { text: "Peti", correct: false },
+      { text: "Panka", correct: false },
+      { text: "Hépu", correct: true },
+    ],
+  },
+  {
+    question: "Megyünk szombaton a fűrdőbe?",
+    answers: [
       { text: "Talán", correct: false },
-      { text: "Dehogy tudja", correct: false },
-      { text: "Igen", correct: true },
-    ],
-  },
-  {
-    question: "Milyen ruhát vett Panka utoljára?",
-    answers: [
-      { text: "Bugyi", correct: false },
-      { text: "Fürdőruha", correct: true },
-      { text: "Póló", correct: false },
-      { text: "Melltartó", correct: false },
+      { text: "IGEEEEEEEEEN", correct: true },
+      { text: "Meglehet", correct: false },
+      { text: "Nemhinném", correct: false },
     ],
   },
 ];

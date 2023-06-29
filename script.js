@@ -1,38 +1,38 @@
 const questions = [
   {
-    question: "Which is the larget animal in the world?",
+    question: "Mi a gyerekek és HÉPU kedvenc étele?",
     answers: [
-      { text: "Shark", correct: false },
-      { text: "Blue Whale", correct: true },
-      { text: "Elephant", correct: false },
-      { text: "Giraffe", correct: false },
+      { text: "Cápaleves", correct: false },
+      { text: "Smart leves", correct: true },
+      { text: "Bableves", correct: false },
+      { text: "Káposztaleves", correct: false },
     ],
   },
   {
-    question: "Which is the smallest country in the world?",
+    question: "Mi Katika kedvenc boltja?",
     answers: [
-      { text: "Vatican City", correct: true },
-      { text: "Bhutan", correct: false },
-      { text: "Nepal", correct: false },
-      { text: "Shri Lanka", correct: false },
+      { text: "Crystal Nails", correct: true },
+      { text: "Rossmann", correct: false },
+      { text: "Auchan", correct: false },
+      { text: "Tesco", correct: false },
     ],
   },
   {
-    question: "Which is the largest desert in the world?",
+    question: "Petike holnap összetudja rakni a számítógépet?",
     answers: [
-      { text: "Kalahari", correct: false },
-      { text: "Gobi", correct: false },
-      { text: "Sahara", correct: false },
-      { text: "Antarctica", correct: true },
+      { text: "Nem", correct: false },
+      { text: "Talán", correct: false },
+      { text: "Dehogy tudja", correct: false },
+      { text: "Igen", correct: true },
     ],
   },
   {
-    question: "Which is the smallest continent in the world?",
+    question: "Milyen ruhát vett Panka utoljára?",
     answers: [
-      { text: "Asia", correct: false },
-      { text: "Australia", correct: true },
-      { text: "Arctic", correct: false },
-      { text: "Africa", correct: false },
+      { text: "Bugyi", correct: false },
+      { text: "Fürdőruha", correct: true },
+      { text: "Póló", correct: false },
+      { text: "Melltartó", correct: false },
     ],
   },
 ];
@@ -47,7 +47,7 @@ let score = 0;
 const startQuiz = () => {
   currentQuestionIndex = 0;
   score = 0;
-  nextButton.innerHTML = "Next";
+  nextButton.innerHTML = "Következő";
   showQuestion();
 };
 
@@ -98,8 +98,8 @@ const selectAnswer = (e) => {
 
 const showScore = () => {
   resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-  nextButton.innerHTML = "Play Again";
+  questionElement.innerHTML = `${score} pontot értél el a ${questions.length}-ból!`;
+  nextButton.innerHTML = "Új játék";
   nextButton.style.display = "block";
 };
 

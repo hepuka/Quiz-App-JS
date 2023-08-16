@@ -1,4 +1,4 @@
-const questions = [
+const database = [
   {
     question: "Mi Tatita néninek a kedvenc színe?",
     answers: [
@@ -53,7 +53,7 @@ const startQuiz = () => {
 
 const showQuestion = () => {
   resetState();
-  let currentQuestion = questions[currentQuestionIndex];
+  let currentQuestion = database[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -98,14 +98,14 @@ const selectAnswer = (e) => {
 
 const showScore = () => {
   resetState();
-  questionElement.innerHTML = `${score} pontot értél el a ${questions.length}-ból!`;
+  questionElement.innerHTML = `${score} pontot értél el a ${database.length}-ból!`;
   nextButton.innerHTML = "Új játék";
   nextButton.style.display = "block";
 };
 
 const handleNextButton = () => {
   currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < database.length) {
     showQuestion();
   } else {
     showScore();
@@ -113,7 +113,7 @@ const handleNextButton = () => {
 };
 
 nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < database.length) {
     handleNextButton();
   } else {
     startQuiz();
